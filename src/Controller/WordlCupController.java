@@ -45,7 +45,7 @@ public class WordlCupController  {
 	}
 
 
-	
+	//getting detaills of the overall best team
 	@RequestMapping(value = "/teams/best", method=RequestMethod.GET, produces={MediaType.APPLICATION_JSON_VALUE} )
 	@ResponseBody 
 	public Team getBestRankTeamDetails(){
@@ -90,7 +90,7 @@ public class WordlCupController  {
 		return matchResult.getWins(teamName);
 	}
 	
-	/*
+	
 	//gettings all teams
 	//getting wins for a given team name
 		@RequestMapping(value = "/teams", method=RequestMethod.GET, produces={MediaType.APPLICATION_JSON_VALUE} )
@@ -99,11 +99,4 @@ public class WordlCupController  {
 			team = new Team();
 			return team.getAllTeams();
 		}
-	*/
-	
-	//getting all resuls so far
-	
-
-	
-
 }
